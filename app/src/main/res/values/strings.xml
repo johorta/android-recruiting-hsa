@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AndroidConcrete</string>
+    <string name="txt_description_repository">Repositorio Descripción</string>
+    <string name="txt_name_repository">Repositorio</string>
+    <string name="txt_autor">Autor</string>
+
+    <string name="txt_star">1</string>
+    <string name="txt_fork">1</string>
+
+
+    <string name="txt_detalle_pull">Detalle Pull</string>
+    <string name="txt_autor_pull">Autor Pull</string>
+    <string name="txt_titulo_pull">Titulo Pull</string>
+
+
+</resources>
