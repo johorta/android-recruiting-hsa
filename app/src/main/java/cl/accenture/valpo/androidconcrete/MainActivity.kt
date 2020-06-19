@@ -1,9 +1,11 @@
 package cl.accenture.valpo.androidconcrete
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import cl.accenture.valpo.androidconcrete.Model.Repository.Repositories
 import cl.accenture.valpo.andrpoid.Adapter.MyRepositoryAdapter
@@ -11,7 +13,6 @@ import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
 import java.io.IOException
-import androidx.recyclerview.widget.LinearLayoutManager as LinearLayoutManager
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
     var scrollOutItems: Int?= 0
     var layout: LinearLayoutManager?=null
     var progressBar: ProgressBar?=null
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

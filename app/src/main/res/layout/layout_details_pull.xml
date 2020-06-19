@@ -62,6 +62,7 @@
                     android:id="@+id/image_autor"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
                     app:civ_border_color="@color/colorPrimaryDark"
                     app:civ_border_width="1dp"
                     app:civ_shadow="false"
@@ -71,15 +72,19 @@
                     app:layout_constraintTop_toTopOf="@+id/guideline12"
                     tools:srcCompat="@tools:sample/avatars" />
 
+
                 <TextView
                     android:id="@+id/txt_autor_pull"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
                     android:text="@string/txt_autor_pull"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:textStyle="normal" />
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/colorUserName"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline8"
+                    app:layout_constraintTop_toBottomOf="@+id/repositoryAvatarOwner" />
+
 
             </LinearLayout>
 
