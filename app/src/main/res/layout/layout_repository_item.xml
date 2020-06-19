@@ -14,14 +14,14 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
 
             <LinearLayout
-                android:layout_width="253dp"
-                android:layout_height="match_parent"
+                android:layout_width="291dp"
+                android:layout_height="140dp"
                 android:layout_marginRight="8dp"
                 android:gravity="center_vertical"
                 android:orientation="vertical">
@@ -73,7 +73,6 @@
                         app:layout_constraintStart_toStartOf="parent" />
 
 
-
                     <TextView
                         android:id="@+id/txt_star"
                         android:layout_width="wrap_content"
@@ -110,9 +109,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="276dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
+                android:baselineAligned="false"
                 android:gravity="center_vertical"
                 android:orientation="vertical">
 
@@ -121,6 +121,7 @@
                     android:id="@+id/image_autor"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:baselineAligned="false"
                     app:civ_border_color="@color/colorPrimaryDark"
                     app:civ_border_width="1dp"
                     app:civ_shadow="false"
@@ -130,20 +131,24 @@
                     app:layout_constraintTop_toTopOf="@+id/guideline12"
                     tools:srcCompat="@tools:sample/avatars" />
 
+
                 <TextView
                     android:id="@+id/txt_autor"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="@string/txt_autor"
-                    android:gravity="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:textStyle="normal" />
+                    android:textColor="@color/colorUserName"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline8"
+                    app:layout_constraintTop_toBottomOf="@+id/repositoryAvatarOwner" />
+
 
             </LinearLayout>
 
 
         </LinearLayout>
+
 
     </LinearLayout>
 

@@ -15,6 +15,7 @@ import cl.accenture.valpo.androidconcrete.Model.Repository.Owner
 import cl.accenture.valpo.androidconcrete.Model.Repository.Repositories
 import cl.accenture.valpo.androidconcrete.R
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.layout_repository_item.view.*
 
 class MyRepositoryAdapter(val repositoryList: Repositories): RecyclerView.Adapter<MyRepositoryAdapter.MyViewHolder>() {
@@ -22,6 +23,7 @@ class MyRepositoryAdapter(val repositoryList: Repositories): RecyclerView.Adapte
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val cellForRow = layoutInflater.inflate(R.layout.layout_repository_item, parent, false)
+
         return MyViewHolder(cellForRow)
     }
 
